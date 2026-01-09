@@ -1,0 +1,27 @@
+{
+  "name": "durable-lambda-gpt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "synth": "npx cdk synth",
+    "deploy": "npx cdk deploy",
+    "diff": "npx cdk diff"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.965.0",
+    "@aws-sdk/client-ssm": "^3.883.0",
+    "@aws/durable-execution-sdk-js": "^1.0.0",
+    "aws-cdk-lib": "^2.100.0",
+    "constructs": "^10.0.0",
+    "dotenv": "^16.0.0",
+    "openai": "^5.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.27.2",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "yarn@1.22.22"
+}
